@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom'
 
 export default function Feed() {
     const navigate=useNavigate()
-    const auth=JSON.parse(localStorage.getItem("user"))
+    const auth=JSON.parse(localStorage.getItem("Instauser"))
     const [allPosts, setallposts] = useState([])
     const [like, setLike] = useState([])
     const img = 'http://127.0.0.1:5000/profileImg/'

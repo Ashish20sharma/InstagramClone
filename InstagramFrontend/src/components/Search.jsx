@@ -4,7 +4,7 @@ import axios from 'axios'
 import { Link } from 'react-router-dom'
 
 export default function Search() {
-    const auth=JSON.parse(localStorage.getItem('user'))
+    const auth=JSON.parse(localStorage.getItem('Instauser'))
     const [search, setSearch] = useState([])
     const [profile, setProfile] = useState([])
     const [searchfeed, setsearchfeed] = useState(true)

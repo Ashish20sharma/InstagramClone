@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 export default function Footer() {
-  const auth=JSON.parse(localStorage.getItem("user"))
+  const auth=JSON.parse(localStorage.getItem("Instauser"))
   const img = 'http://127.0.0.1:5000/profileImg/'
   return (
     <>

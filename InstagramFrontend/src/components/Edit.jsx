@@ -4,7 +4,7 @@ import Footer from './Footer'
 import axios from 'axios'
 
 export default function Edit() {
-    const auth=JSON.parse(localStorage.getItem('user'))
+    const auth=JSON.parse(localStorage.getItem('Instauser'))
     const params=useParams()
     const navigate=useNavigate()
     const [editData,seteditData]=useState([])
@@ -19,7 +19,7 @@ export default function Edit() {
         axios.post(`http://127.0.0.1:5000/user/edit/${params.id}`,formData,{ headers: { "Content-Type": "multipart/form-data" } }).then((res,err)=>{
                     if(res.status===200){
                         localStorage.clear()
-                        localStorage.setItem('user',JSON.stringify(res.data.result))
+                        localStorage.setItem('Instauser',JSON.stringify(res.data.result))
                         navigate('/')
                     }else{
                       setError(true)

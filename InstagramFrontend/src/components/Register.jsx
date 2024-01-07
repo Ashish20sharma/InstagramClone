@@ -20,7 +20,7 @@ export default function Register() {
         <>
             <div className="w-full min-h-screen bg-zinc-900 text-white py-5 flex flex-col items-center justify-center">
                 <div className="flex flex-col items-center gap-4 px-4">
-                    <img className="w-1/2" src="/images/logo.png" alt="" />
+                    <img className="w-1/2" src="logo.png" alt="img" />
                     <form className="w-full" onSubmit={(e) => e.preventDefault()}>
                         <input onInput={(e) => setUser({ ...user, username: e.target.value })} value={user.username} className="px-3 mt-2 py-2 border-2 border-zinc-800 rounded-md block w-full bg-zinc-900" type="text" placeholder="username" name="username" />
                         <input onInput={(e) => setUser({ ...user, email: e.target.value })} value={user.email} className="px-3 mt-2 py-2 border-2 border-zinc-800 rounded-md block w-full bg-zinc-900" type="email" placeholder="email" name="email" />

@@ -7,7 +7,7 @@ export default function Profile() {
     const [profilePost, setProfilepost] = useState([])
     const img = 'http://127.0.0.1:5000/profileImg/'
     const navigate = useNavigate()
-    const auth = JSON.parse(localStorage.getItem('user'))
+    const auth = JSON.parse(localStorage.getItem('Instauser'))
     const handleLogout = () => {
         localStorage.clear()
         navigate('/login')
